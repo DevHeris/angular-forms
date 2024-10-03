@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './demo-form-sku.component.css',
 })
 export class DemoFormSkuComponent {
-  onSubmit(data) {
-    console.log(data);
+  onSubmit(formData: { sku: string }): void {
+    console.log(formData);
   }
 }
